@@ -1,0 +1,24 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+#
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, and plugins designed to encourage good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    avoid_redundant_argument_values: warning
+    prefer_const_constructors: warning
+    prefer_const_literals_to_create_immutables: warning
+    avoid_multiple_declarations_per_line: warning
+
+linter:
+  rules:
+    - avoid_redundant_argument_values
+    - prefer_const_constructors
+    - prefer_const_literals_to_create_immutables
+    - avoid_unnecessary_containers
